@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var f;
+	var p.n,r,simpleint,amount;
+	function findSI(f)
+	{
+		p=parseFloat(f.principal.value);
+		n=parseFloat(f.years.value);
+		r=parseFloat(f.rateint.value);
+		simpleint=(p*n*r)/100;
+		amount=parseFloat(p)+parseFloat(simpleint);
+		f.si.value=simpleint;
+		f.amt.value=amount;
+	}
+</script>
+</head>
+<body bgcolor=thistle>
+	<form>
+		<br><hr><h2><b><i><marquee>Simple Interest</marquee></i></b></h2>
+	<pre>
+		<center>
+			<br><hr><br>
+			Enter the principal Amount (in Rupess) : <input type=text name=principal>
+			<br>
+			Enter the number of years : <input type=text name=years><br>
+			Enter the Rate of Interest : <input type=test name=rateint><br>
+			<input type=button value="Simple Interest" onClick="findSI(this.form)"><br><br>
+			Simple Interest : <input type=text name=si>
+			Total Amount (Principal + Simple Interest) : <input type=text name=amt>
+			<br><br><hr><br><br>
+		</center>
+	</pre>
+</form>
+</body>
+</html>
